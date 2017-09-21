@@ -9,7 +9,7 @@ section {
   margin: 8px
 }
 
-h1.title {
+header span {
   /*background-image: none:*/
   background-color: orange;
   color: #1c8181;
@@ -17,6 +17,7 @@ h1.title {
   font: center;
   float: left;
   padding: 15px;
+  margin-left: 50px;
 }
 
 .nav_header {
@@ -54,6 +55,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    align-items: center;
 }
 
 li {
