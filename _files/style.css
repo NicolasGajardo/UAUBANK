@@ -1,0 +1,38 @@
+h1 {
+  /*background-image: none:*/ 
+  background-color: yellow;
+  color: #1c8181;
+  font-size: 5em;
+  font: center;
+  float: left;
+  width: 60%;
+}
+
+.nav_header {
+  width: 40%;
+  display: inline-block;
+}
+
+.nav_header a {
+  background-color: black;
+  width: : auto;
+  height: auto;
+  display: block;
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+
+.nav_main {
+  clear: both;
+}
+
+.nav_main a {
+  background-color: pink;
+  font-size: 1em;
+  margin: 1em;
+  float: left;
+}
+
+.div_rut {
+  clear: left;
+}
