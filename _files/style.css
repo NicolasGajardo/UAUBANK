@@ -1,18 +1,24 @@
-h1 {
-  /*background-image: none:*/ 
-  background-color: yellow;
+header {
+  background-color: white;
+}
+
+body {
+}
+
+h1.title {
+  /*background-image: none:*/
+  background-color: orange;
   color: #1c8181;
-  font-size: 5em;
+  font-size: 3em;
   font: center;
   float: left;
-  width: 60%;
+  padding: 15px;
 }
 
 .nav_header {
-  width: 40%;
-  display: inline-block;
+  float:right;
 }
-
+/*
 .nav_header a {
   background-color: black;
   width: : auto;
@@ -20,7 +26,7 @@ h1 {
   display: block;
   margin: 0.5em;
   font-size: 1.5em;
-}
+}*/
 
 .nav_main {
   clear: both;
@@ -35,4 +41,33 @@ h1 {
 
 .div_rut {
   clear: left;
+}
+
+/* OTTO */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
