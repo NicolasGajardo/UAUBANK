@@ -1,8 +1,15 @@
 https://www.w3schools.com/html/html5_semantic_elements.asp
 
-
+#Para más adelante
 <details>
   <summary>Copyright 1999-2017.</summary>
   <p> - by UAU Bank. All Rights Reserved.</p>
   <p>All content and graphics on this web site are the property of the company UAU Bank.</p>
 </details>
+
+
+
+# Familia de íconos a utilizar
+https://www.iconfinder.com/icons/186400/heart_like_love_icon#size=128
+  o
+https://www.iconfinder.com/icons/984762/follow_health_heart_like_likes_love_icon#size=128
