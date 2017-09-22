@@ -240,6 +240,8 @@ hr {
 }
 #protegertrans {
   background-color: #1c8181;
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
   border-radius: 15px;
   padding: 25px;
 }
@@ -317,10 +319,6 @@ aside div.like {
   border-radius: 4px;
   box-sizing: border-box;
 }
-.main_cards .small_left_image {
-  float: left;
-  padding: 10px;
-}
 main {
   width: 80%;
   margin: 0 auto;
@@ -329,7 +327,7 @@ main {
   width:50%;
   margin: 0 auto;
 }
-.main_texto_imagen .small_left_image {
+.small_left_image {
   float: left;
   padding: 10px;
 }
