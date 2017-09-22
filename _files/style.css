@@ -1,20 +1,22 @@
-header {
-  background-color: white;
+* {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 header span {
   /*background-image: none:*/
   background-color: orange;
   color: #1c8181;
-  font-size: 3em;
-  font: center;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
   float: left;
-  padding: 15px;
+  padding: 1.5em;
   margin-left: 50px;
 }
 
 .nav_header {
-  float:right;
+  display: inline-block;
+  margin-left: 5%;
 }
 /*
 .nav_header a {
@@ -31,10 +33,18 @@ header span {
 }
 
 .nav_main a {
-  background-color: pink;
   font-size: 1em;
-  margin: 1em;
+  margin: 1em 0em 1em;
   float: left;
+}
+
+.nav_main a:first-child:before {
+    content: "";
+}
+
+.nav_main a:before{
+    content: " | ";
+    padding: 0 10px;
 }
 
 .div_rut {
@@ -45,9 +55,10 @@ header span {
 ul {
     list-style-type: none;
     margin: 0;
+    margin-top: 3em;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: orange;
     align-items: center;
 }
 
@@ -68,5 +79,11 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #1c8181;
+}
+
+.cuadrito {
+  width:33%;
+  border-width: 1px;
+  border-color: black;
 }
