@@ -186,11 +186,17 @@ ul.header_menu li a:hover:not(.active) {
   padding: 10px;
 }
 
-.slider_space img{
+/*.slider_space img{
   height: 300px;
   width: 80%;
   margin: auto;
   display: block;
+}*/
+.slider_space2 {
+  background: url("./saltando.png");
+  height: 275px;
+  width: 80%;
+  margin: auto;
 }
 
 table {
@@ -216,4 +222,24 @@ td {
 }
 hr {
   width: 90%;
+}
+#login {
+  background-color: lightgrey;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 10px;
+}
+#login span {
+  color: #1c8181;
+  font-weight: bold;
+}
+#login span a{
+  color: #1c8181;
+}
+#protegertrans {
+  background-color: #1c8181;
+  border-radius: 15px;
+  padding: 25px;
 }
