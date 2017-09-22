@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<title>Banco UAU</title>
+  	<link rel="stylesheet" type="text/css" href="./_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./_files/styleNico.css">
+  </head>
+  <body>
+    <header>
+      <span>BANCO UAU</span>
+      <nav class="nav_header">
+        <ul class="header_menu">
+          <li><a class="active" href="#home">Personas</a></li>
+          <li><a href="#news">Pymes</a></li>
+          <li><a href="#contact">Empresas</a></li>
+          <li><a href="#about">Universidades</a></li>
+          <li><a href="#about">Beneficios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <nav class="nav_main">
+        <a>Hazte Cliente</a>
+        <a>Nuestro Banco</a>
+        <a>Nuestros Productos</a>
+        <a>Crédito Personal</a>
+        <a>Tarjetas</a>
+        <a>Seguros</a>
+        <a>Inversiones</a>
+        <a>Mundo Hipotecario</a>
+      </nav>
+    </section>
+    <main>
+      <form action="/action_page.php" method="get">
+        <fieldset>
+          <legend>
+            Pide tu Crédito Personal
+          </legend>
+          <div>
+              <label>RUT</label>
+            <input type="text" />
+              <label>Monto del Crédito que desesas solicitar ($)</label>
+            <input type="text"/>
+              <label>Plazo en el que deseas pagar (Meses)</label>
+            <select>
+              <option value="Select">Select</option>
+            </select>
+              <label>Desfase del pago de tu primera cuota (Días)</label>
+            <select>
+              <option value="Select">Select</option>
+            </select>
+              <label>Meses del año en los cuales no pagarás cuota</label>
+            <div>
+              <select>
+                <option value="Select">Select</option>
+              </select>
+              <select>
+                <option value="Select">Select</option>
+              </select>
+            </div>
+          </div>
+          <img src="_files/images/saltando-785x360.jpg"/>
+        </fieldset>
+        <fieldset>
+          <img />
+          <p>
+            Ejemplo representativo de un Crédito Personal con:
+          </p>
+          <p>
+            <strong class="cae">CAE 14,31%</strong>, calculado en base a un crédito de consumo de $5.000.000 en 36 cuotas mensuales, con una tasa de interés de 1,1%. Monto total del crédito de  $6.103.888. Operación afecta a inpuesto de créditpo. Sin seguros asociados.
+          </p>
+          <p>
+            La tasa de interés es una tasa personal de acuerdo al monto y plazo de acuerdo a la simulación realizada por cada cliente.
+          </p>
+          
+          <p>
+            <b>Selecciona los seguros que deseas contratar con el crédito:</b>
+          </p>
+          
+          <input type="radio" name="credito" value="Desgravamen"> Desgravamen
+          <input type="radio" name="credito" value="Vida"> Vida
+          <input type="radio" name="credito" value="Cesantía"> Cesantía
+
+          <input type="submit" value="SIMULAR">
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
