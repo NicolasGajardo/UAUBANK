@@ -186,14 +186,8 @@ ul.header_menu li a:hover:not(.active) {
   padding: 10px;
 }
 
-/*.slider_space img{
-  height: 300px;
-  width: 80%;
-  margin: auto;
-  display: block;
-}*/
 .slider_space2 {
-  background: url("./saltando.png");
+  background: url("./images/saltando.png");
   height: 275px;
   width: 80%;
   margin: auto;
@@ -240,6 +234,8 @@ hr {
 }
 #protegertrans {
   background-color: #1c8181;
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
   border-radius: 15px;
   padding: 25px;
 }
@@ -270,9 +266,52 @@ aside div.like {
   width:100%;
   height: 300px; 
 }
-.aside_nuestros_productos {
+.aside_nuestros_productos, .aside_nuestras_tarjetas {
   width:20%;
   float:left;
+}
+.aside_nuestras_tarjetas li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+.aside_nuestras_tarjetas h3 {
+    color:#1c8181;
+    font-weight: bold;
+}
+.aside_nuestras_tarjetas h3 {
+    color:#1c8181;
+    font-weight: bold;
+}
+.aside_nuestras_tarjetas label{
+  display: block;
+  margin-top: 1em;
+}
+.aside_nuestras_tarjetas label::before{
+  content: "> ";
+  /*TODO: CAMBIAR FUENTE AQUÍ*/
+}
+.main_cards {
+  width: 80%;
+  margin: 0 auto;
+  clear: both;
+}
+.main_cards img {
+  width: 30%;
+  float: left;
+}
+.main_cards div {
+  width: 80%;
+}
+.main_cards button {
+  background-color: orange;
+  width: 20%;
+  float: right;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 main {
   width: 80%;
@@ -282,7 +321,7 @@ main {
   width:50%;
   margin: 0 auto;
 }
-.main_texto_imagen .small_left_image {
+.small_left_image {
   float: left;
   padding: 10px;
 }
