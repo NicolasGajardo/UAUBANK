@@ -6,6 +6,13 @@ header {
   overflow: hidden;
 }
 
+body {
+  margin: 0;
+}
+section {
+  margin: 8px
+}
+
 header span {
   /*background-image: none:*/
   background-color: orange;
