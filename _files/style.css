@@ -4,10 +4,15 @@
 
 header {
   overflow: hidden;
+  margin: auto;
+  width: 70%;
+
 }
 
 section {
   clear: both;
+  margin-top: 10px;
+  overflow: -webkit-paged-y;
 }
 
 header span {
@@ -19,12 +24,11 @@ header span {
   font-weight: bold;
   float: left;
   padding: 1.5em;
-  margin-left: 50px;
 }
 
 .nav_header {
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .nav_main {
@@ -75,7 +79,7 @@ ul.header_menu li a {
 }
 
 ul.header_menu li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #1c8181;
 }
 
 .active {
@@ -88,6 +92,8 @@ ul.header_menu li a:hover:not(.active) {
   list-style:none; 
   font-family:Arial, Helvetica, sans-serif; 
   padding:0;
+  width: 50%;
+  margin: auto;
 }
 
 #calugas li { 
@@ -147,14 +153,12 @@ ul.header_menu li a:hover:not(.active) {
   height:auto; 
   font-weight:normal; 
   font-size:14px; 
-  color:#F00; 
-  font-family:Arial, Helvetica, sans-serif; 
-  text-align:left; 
+  color:orange; 
   padding:0; 
-  margin:0;  
-  border-style: groove;
+  margin:0;
+  border: 1px solid;
   border-color: black;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: -8px;
   background-color: #1c8181;
 }
@@ -163,22 +167,53 @@ ul.header_menu li a:hover:not(.active) {
   font-weight: normal;
 }
 
-#calugas li h2.texto1 span { 
+#calugas li h2.texto1 span:nth-child(1) {
+  padding:5px;
+}
+
+#calugas li h2.texto1 span:nth-child(2) { 
   font-weight:normal; 
   font-size:12px; 
   color:#333; 
   font-family:Arial, Helvetica, sans-serif; 
   text-align:left; 
-  padding:0; 
+   
   margin:3px 0 0 0; 
   display:block; 
   background-color: white;
+  
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
 }
 
-.slider_space {
-  border-style: groove;
-  border-color: black;
-  border-radius: 10px;
-  height: 200px;
+.slider_space img{
+  height: 300px;
   width: 80%;
+  margin: auto;
+  display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #1c8181;
+    width: 100%;
+}
+table th {
+  color: orange;
+}
+table tr:nth-child(even) {
+    background-color: rgb(224,224,224);
+}
+td {
+  text-align: center;
+}
+#indicadores,#tablita2 {
+  width: 75%;
+  margin:auto;
+}
+#indicadores span {
+  font-weight: bold;
+}
+hr {
+  width: 90%;
 }
