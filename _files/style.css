@@ -186,14 +186,8 @@ ul.header_menu li a:hover:not(.active) {
   padding: 10px;
 }
 
-/*.slider_space img{
-  height: 300px;
-  width: 80%;
-  margin: auto;
-  display: block;
-}*/
 .slider_space2 {
-  background: url("./saltando.png");
+  background: url("./images/saltando.png");
   height: 275px;
   width: 80%;
   margin: auto;
