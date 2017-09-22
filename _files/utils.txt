@@ -1,0 +1,8 @@
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+
+<details>
+  <summary>Copyright 1999-2017.</summary>
+  <p> - by UAU Bank. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company UAU Bank.</p>
+</details>
