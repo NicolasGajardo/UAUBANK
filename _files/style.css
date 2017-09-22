@@ -2,6 +2,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+header {
+  overflow: hidden;
+}
+
 header span {
   /*background-image: none:*/
   background-color: orange;
@@ -29,7 +33,6 @@ header span {
 }*/
 
 .nav_main {
-  clear: both;
 }
 
 .nav_main a {
