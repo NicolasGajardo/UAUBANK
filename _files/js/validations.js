@@ -25,7 +25,8 @@
     
     function checkPassword(){
       _validateField(doc.getElementById('password'), function(value){
-        return value && value.length === 4;
+        var reg = /^\d+$/;
+        return value && value.length === 4 && reg.test(value);
       });
     }
     
