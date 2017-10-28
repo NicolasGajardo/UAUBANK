@@ -60,9 +60,9 @@
       </section>
       <aside class="aside_nuestros_productos">
         <div id="login">
-          <span>RUT <input type="text" name="user"></span>
-          <span>CLAVE <input type="password" name="pass"></span>
-          <button>INGRESAR</button>
+          <span>RUT <input id="rut" type="text" name="user" onblur="return checkRut()" ></span>
+          <span>CLAVE <input id="password" type="password" name="pass" onblur="return checkPassword()" ></span>
+          <button id="ingresar" onclick="return checkIngresar()">INGRESAR</button>
           <br>
           <span><a href="#">¿No tienes tu clave?</a></span>
           <div id="protegertrans">Como proteger tus transacciones</div>
@@ -91,17 +91,15 @@
         </div>
       </aside>
     </main>
-
+    <script src="./_files/js/validations.js"></script>
   </body>
   <footer>
     <section class="footer_section">
-      
       <div class="social-icons">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-google"></a>
       </div>
-          
     </section>
   </footer>
 </html>

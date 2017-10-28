@@ -13,7 +13,7 @@
       </a>
       <nav class="nav_header">
         <ul class="header_menu">
-          <li><a class="active" href="index.html">Personas</a></li>
+          <li><a href="index.html">Personas</a></li>
           <li><a href="#">Pymes</a></li>
           <li><a href="#">Empresas</a></li>
           <li><a href="pag3.html">Universidades</a></li>
@@ -40,19 +40,19 @@
             Pide tu Crédito Personal
           </legend>
           <div>
-              <label>RUT</label>
-            <input type="text" />
-              <label>Monto del Crédito que desesas solicitar ($)</label>
-            <input type="text"/>
-              <label>Plazo en el que deseas pagar (Meses)</label>
-            <select>
+            <label>RUT</label>
+            <input id="rut" type="text" onblur="return checkRut()" />
+            <label>Monto del Crédito que desesas solicitar ($)</label>
+            <input id="mount" type="text" onblur="return checkMount()" />
+            <label>Plazo en el que deseas pagar (Meses)</label>
+            <select id="select_PlazoPagar">
               <option value="Select">Select</option>
               <option value="1">opcion 1</option>
               <option value="2">opcion 2</option>
               <option value="3">opcion 3</option>
             </select>
               <label>Desfase del pago de tu primera cuota (Días)</label>
-            <select>
+            <select id="select_PrimeraCuota">
               <option value="Select">Select</option>
               <option value="1">opcion 1</option>
               <option value="2">opcion 2</option>
@@ -60,13 +60,13 @@
             </select>
               <label>Meses del año en los cuales no pagarás cuota</label>
             <div>
-              <select>
+              <select id="select_MesesNoPagoInicio">
                 <option value="Select">Select</option>
                 <option value="1">opcion 1</option>
               <option value="2">opcion 2</option>
               <option value="3">opcion 3</option>
               </select>
-              <select>
+              <select id="select_MesesNoPagoFin">
                 <option value="Select">Select</option>
                 <option value="1">opcion 1</option>
               <option value="2">opcion 2</option>
@@ -92,13 +92,14 @@
             <b>Selecciona los seguros que deseas contratar con el crédito:</b>
           </p>
           
-          <input type="radio" name="credito" value="Desgravamen"> Desgravamen
-          <input type="radio" name="credito" value="Vida"> Vida
-          <input type="radio" name="credito" value="Cesantía"> Cesantía
-
-          <input type="submit" value="SIMULAR">
+          <input id="credito1" type="radio" name="credito" value="Desgravamen"> Desgravamen
+          <input id="credito2" type="radio" name="credito" value="Vida"> Vida
+          <input id="credito3" type="radio" name="credito" value="Cesantía"> Cesantía
+          <!-- TODO: Change to SUBMIT type -->
+          <input id="simulate" type="button" value="SIMULAR" onclick="return checkSimulateButton()">
         </fieldset>
       </form>
     </main>
+    <script src="./_files/js/validations.js"></script>
   </body>
 </html>

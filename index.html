@@ -34,8 +34,8 @@
     </section>
     <section class="slider_space2">
       <div id="login">
-        <span>RUT <input type="text" name="user"></span>
-        <span>CLAVE <input type="password" name="pass"></span>
+        <span>RUT <input id="rut" type="text" name="user" onblur="return checkRut()"></span>
+        <span>CLAVE <input id="password" type="password" name="pass"></span>
         <button>INGRESAR</button>
         <br>
         <span><a href="#">¿No tienes tu clave?</a></span>
@@ -229,5 +229,6 @@
           </table>
       </div>
     </section>
+    <script src="./_files/js/validations.js"></script>
   </body>
 </html>
