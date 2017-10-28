@@ -18,8 +18,7 @@
 
     function checkRut() {
       _validateField(doc.getElementById('rut'), function(value){
-        //TODO:
-        return value && value.length === 9;
+        return /^([0-9]{7,8}-([0-9]|k|K))$/.test(value);
       });
     }
     
