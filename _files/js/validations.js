@@ -40,8 +40,33 @@
       _validateField(doc.getElementById('simulate'), function(value){
         return _checkAllSimularContent();
       });
-      
+
       function _checkAllSimularContent(){
+        function _checkCheckboxes(){
+          var creditos = doc.getElementsByName('credito');
+          var aux = [];
+          
+          for (var k = 0; k < creditos.length; k++) {
+            creditos[k].style.outlineStyle = "none";
+          }
+          
+          for (var i = 0; i < creditos.length; i++) {
+            if(creditos[i].checked){
+              _validateField(creditos[i], function(){
+                return true;
+              });
+              return true;
+            }
+          }
+          
+          for (var j = 0; j < creditos.length; j++) {
+            _validateField(creditos[j], function(){
+              return false;
+            });
+          }
+          return false;
+        }
+        
         function _checkSelects(ids){
           var arrSelects = [];
           
@@ -67,6 +92,7 @@
             
         checkRut();
         checkMount();
+        _checkCheckboxes();
         
         return false;
       }
@@ -76,12 +102,13 @@
       return checkPassword() && checkRut();
     } 
     
+    
     return {
       checkRut: checkRut,
       checkPassword: checkPassword,
       checkMount: checkMount,
       checkSimulateButton: checkSimulateButton,
-      checkIngresar: checkIngresar
+      checkIngresar: checkIngresar,
     };
   }(win, doc));
   
